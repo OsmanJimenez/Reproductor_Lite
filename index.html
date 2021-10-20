@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
 	<article class="screen">
 		<div class="coverImage">
 			<img src="img/cover.jpg" alt="">
@@ -18,25 +19,30 @@
 		<div class="search"></div>
 		<div class="bodyPlayer"></div>
 
-		<div class="info">
+		<div class="info" id="info">
 			<h4>VIVIENDO</h4>
 			<h3>Nach</h3>
 		</div>
 
-		<table class="player">
-			<td><input type="checkbox" /><label class="backward pointer" for="backward"></label></td>
-			<td><input type="checkbox" id="play" title="Play pointer" /><label class="play" for="play"></label></td>
-			<td><input type="checkbox" /><label class="forward pointer" for="forward"></label></td>
+		<table class="player" id="control-panel">
+			<td><input type="checkbox"><label class="backward pointer" for="backward"></label></td>
+			<td><input type="checkbox" id="play"><label class="play pointer" for="play"></label></td>
+			<td><input type="checkbox"><label class="forward pointer" for="forward"></label></td>
 		</table>
 
 		<table class="footer">
-			<td><input type="checkbox" id="love" checked /><label class="love pointer" for="love"></label></td>
-			<td><input type="checkbox" id="shuffle" /><label class="shuffle pointer" for="shuffle"></label></td>
-			<td><input type="checkbox" id="repeat" checked /><label class="repeat pointer" for="repeat"></label></td>
-			<td><input type="checkbox" id="options" /><label class="options pointer" for="options"></label></td>
+			<td><input type="checkbox" id="love" checked><label class="love pointer" for="love"></label></td>
+			<td><input type="checkbox" id="shuffle" checked><label class="shuffle pointer" for="shuffle"></label></td>
+			<td><input type="checkbox" id="repeat" checked><label class="repeat pointer" for="repeat"></label></td>
+			<td><input type="checkbox" id="options" checked><label class="options pointer" for="options"></label></td>
 		</table>
 
+		<audio id="Music" controls style="display: none;">
+			<source src="audio/cancion.mp3" type="audio/mpeg">
+		</audio>
 	</article>
+
 </body>
+<script src="js/main.js"></script>
 
 </html>
